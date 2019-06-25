@@ -281,4 +281,75 @@ h1 {
   font-size: 30px;
 }
 
+.footer-wrapper {
+  clear: both;
+}
+.footer-wrapper .links {
+  float: left;
+  width: 25%;
+  height: 435px;
+  background-color: #f2f2f2;
+}
+.footer-wrapper .links .l-red {
+  color: #B92C2C;
+  font-size: 45px;
+  font-weight: 800;
+}
+.footer-wrapper .links a {
+  text-decoration: none;
+}
+.footer-wrapper .links a p {
+  margin: 0px;
+  font-weight: 400;
+  color: #333333;
+}
+.footer-wrapper .links p {
+  font-weight: 800;
+}
+.footer-wrapper .links p .s-red {
+  color: #B92C2C;
+}
+.footer-wrapper .accelerate-wrapper {
+  float: right;
+  width: 75%;
+  background-color: #333333;
+}
+.footer-wrapper .accelerate-wrapper .accelerate {
+  text-align: left;
+}
+.footer-wrapper .accelerate-wrapper .accelerate #accelerate-img {
+  float: left;
+  width: 50%;
+}
+.footer-wrapper .accelerate-wrapper .accelerate #accelerate-img img {
+  padding: 50px;
+}
+.footer-wrapper .accelerate-wrapper .accelerate #accelerate-text {
+  float: right;
+  width: 50%;
+  padding-top: 50px;
+}
+.footer-wrapper .accelerate-wrapper .accelerate #accelerate-text h1 {
+  font-size: 40px;
+}
+.footer-wrapper .accelerate-wrapper .accelerate #accelerate-text .l-red {
+  color: #B92C2C;
+  font-size: 40px;
+  font-weight: 800;
+}
+.footer-wrapper .accelerate-wrapper .accelerate #accelerate-text p {
+  color: #ffffff;
+  font-weight: 300;
+}
+.footer-wrapper .accelerate-wrapper .cc {
+  clear: both;
+  background-color: black;
+}
+.footer-wrapper .accelerate-wrapper .cc p {
+  margin: 0;
+  padding: 10px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */
