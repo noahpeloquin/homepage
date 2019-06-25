@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { simpleAction } from './actions/testAction';
+import { Header } from './components/Header';
+import { SloganSection } from './components/SloganSection';
+import { Mission } from './components/Mission';
+import { WhatWeDo } from './components/WhatWeDo';
+import { Developers } from './components/Developers';
+import { WhoWeServe } from './components/WhoWeServe';
+import { StartUp } from './components/StartUp';
+import { Footer } from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './sass/style.css';
+
+const mapDispatchToProps = dispatch => ({
+  simpleAction: () => dispatch(simpleAction())
+});
+
+const mapStateToProps = state => ({
+  ...state
+});
+
+class App extends Component {
+  simpleAction = event => {
+    this.props.simpleAction();
+  };
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <SloganSection />
+        <Mission />
+        <WhatWeDo />
+        <Developers />
+        <WhoWeServe />
+        <StartUp />
+        <Footer />
+      </div>
+    );
+  }
 }
 
-export default App;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
