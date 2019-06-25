@@ -12,10 +12,10 @@ class Nav extends Component {
             <a href="https://labs.chiedo.com/case-studies/">PORTFOLIO</a>
           </li>
           <li>
-            <a href="">WHAT WE DO</a>
+            <a href="#whatitdo">WHAT WE DO</a>
           </li>
           <li>
-            <a href="">WHO WE SERVE</a>
+            <a href="#whoweserve">WHO WE SERVE</a>
           </li>
           <li>
             <a href="https://labs.chiedo.com/page/contact/">CONTACT US</a>

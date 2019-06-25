@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link';
 import React, { Component } from 'react';
 import logo from '../imgs/b-logo-white.png';
@@ -9,17 +10,6 @@ export class Header extends Component {
     this.state = {
       imgSrc: ''
     };
-  }
-  componentDidMount() {
-    // Couldn't find the logo under any of the wp api calls
-    // return fetch(`https://labs.chiedo.com/wp-json/wp/v2/pages`)
-    //   .then(response => response.json())
-    //   .then(responseJson => {
-    //     console.log(responseJson);
-    //   })
-    //   .catch(error => {
-    //     console.error(error);
-    //   });
   }
 
   render() {

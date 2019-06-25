@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import Link from 'next/link';
 
 export class WhatWeDo extends Component {
   render() {
     return (
-      <div className="whatitdo">
+      <div id="whatitdo">
         <div className="left-split">
           <img src="https://urlzs.com/BUA3Q" alt="nerd" />
         </div>

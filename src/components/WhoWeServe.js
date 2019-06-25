@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import Link from 'next/link';
 
 export class WhoWeServe extends Component {
   render() {
     return (
-      <div className="whatitdo">
+      <div id="whoweserve">
         <div className="left-split">
           <div className="text-container">
             <h2>

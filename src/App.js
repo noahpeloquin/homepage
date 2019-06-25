@@ -8,6 +8,7 @@ import { WhatWeDo } from './components/WhatWeDo';
 import { Developers } from './components/Developers';
 import { WhoWeServe } from './components/WhoWeServe';
 import { StartUp } from './components/StartUp';
+import { PostContainer } from './containers/PostContainer';
 import { Footer } from './components/Footer';
 
 import './sass/style.css';
@@ -34,6 +35,7 @@ class App extends Component {
         <Developers />
         <WhoWeServe />
         <StartUp />
+        <PostContainer></PostContainer>
         <Footer />
       </div>
     );

@@ -136,7 +136,7 @@ button:hover {
   margin-top: 15px;
 }
 
-.whatitdo {
+#whatitdo {
   height: 400px;
 }
 
@@ -382,5 +382,61 @@ h1 {
     }
   }
 }
+.post-container {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.post {
+  width: 20%;
+}
+
+.post-wrapper {
+  position:relative;
+  text-align:center;
+  .post-overlay {
+    text-align:center;
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background-color: $red;
+    opacity: 0;
+    h2 {
+      margin-left:auto;
+      margin-right:auto;
+      height: 100%;
+      left: 0;
+      right: 0;
+      color: $white;
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
+    p {
+      margin: 0;
+      color: $white;
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+
+  .post-overlay:hover {
+    opacity: .75;
+    transition: opacity 0.7s ease;
+  }
+
+  .post-picture {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
 
 
