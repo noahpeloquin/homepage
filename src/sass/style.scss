@@ -103,7 +103,7 @@ button:hover {
   position: relative;
   width: 300px;
   .daboi-image {
-    width: 275px;
+    width: 90%;
   }
   .nametag {
     position: absolute;
@@ -138,6 +138,7 @@ button:hover {
 
 #whatitdo {
   height: 400px;
+  background-color: $off-white;
 }
 
 .bold-red {
@@ -227,8 +228,10 @@ h1 {
     background-color: $screen;
     .slogan {
       position:absolute;
-      left: 300px;
-      padding-top: 50px;
+      left: 10%;
+      right: 10%;
+      top:10%;
+
       .slogan-wrapper {
         display: inline-flex;
         h1 {
@@ -302,7 +305,7 @@ h1 {
           text-decoration: none;
           color: $white;
           font-weight: 300;
-          font-size: 30px;
+          font-size: 25px;
         }
       }
     }
@@ -311,11 +314,13 @@ h1 {
 
 .footer-wrapper {
   clear: both;
+  display: flex;
 
   .links {
-    float: left;
+    flex: 1;
+    flex-grow: 1;
     width: 25%;
-    height: 435px;
+
     background-color: $off-white;
     .l-red {
       color: $red;
@@ -339,8 +344,9 @@ h1 {
   }
 
   .accelerate-wrapper {
-    float: right;
-    width: 75%;
+    flex: 1;
+    flex-grow: 3;
+    
     background-color: $grey;
     .accelerate {
       text-align: left;
@@ -349,15 +355,16 @@ h1 {
         float:left;
         width: 50%;
         img {
+          width: 75%;
           padding: 50px;
         }
       }
       #accelerate-text {
         float: right;
         width: 50%;
-        padding-top: 50px;
+        padding-top: 25px;
         h1 {
-          font-size: 40px;
+          font-size: 30px;
         }
         .l-red {
           color: $red;
@@ -436,7 +443,340 @@ h1 {
     }
   }
 }
+/* large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+  .slogan-section {
+    display: none;
+  }
 
+  #whatitdo {
+    p {
+      font-size:15px;
+    }
+  }
+  .foundingfathers{
+    height: 100%;
+  }
+  .dev-container {
+    flex-direction: column;
+  }
+  .daboi-wrapper {
+    margin: auto;
+    .daboi-image {
+      width: 91%;
+    }
+    .nametag {
+      position: absolute;
+      top: 211px;
+      width: 100%;
+    }
+  }
+  .grey-button {
+    background-color: $light-grey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .text-container {
+    p{
+      font-size: 15px;
+    }
+  }
+  .startup-wrapper {
+    .startup {
+      float: left;
+      width: 75%;
+      background-color: $grey;
+      height: 400px;
+      #startup-img {
+        img {
+          float: left;
+          width: 100%;
+          padding: 5px;
+        }
+      }
+      #startup-info {
+        padding-top: 40px;
+        float: right;
+        width: 40%;
+        text-align: left;
+        h1 {
+          font-size: 20px;
+        }
+        p {
+          color: $white;
+          padding-right: 40px;
+          font-weight: 300;
+        }
+      }
+    }
+    .post {
+      .post-title-wrapper {
+        .post-title {
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  header {
+    .container {
+      padding: 25px;
+    }
+    .nav {
+      li a {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 12px;
+      }
+    }
+  }
 
+  .footer-wrapper {
+    clear: both;
+    display: flex;
+  
+    .links {
+      flex: 1;
+      flex-grow: 1;
+      width: 25%;
+  
+      background-color: $off-white;
+      .l-red {
+        color: $red;
+        font-size: 45px;
+        font-weight: 800;
+      }
+      a {
+        text-decoration: none;
+        p {
+          margin: 0px;
+          font-weight: 400;
+          color: $grey;
+        }
+      }
+      p {
+        font-weight: 800;
+        .s-red {
+          color: $red;
+        }
+      }
+    }
+  
+    .accelerate-wrapper {
+      flex: 1;
+      flex-grow: 3;
+      
+      background-color: $grey;
+      .accelerate {
+        text-align: left;
+  
+        #accelerate-img {
+          float:left;
+          width: 50%;
+          img {
+            width: 75%;
+            padding: 50px;
+          }
+        }
+        #accelerate-text {
+          float: right;
+          width: 50%;
+          padding-top: 25px;
+          h1 {
+            font-size: 30px;
+          }
+          .l-red {
+            color: $red;
+            font-size: 30px;
+            font-weight: 800;
+          }
+          p {
+            color: $white;
+            font-weight: 300;
+          }
+          button {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .cc {
+        clear: both;
+        background-color: $black;
+        p {
+          margin: 0;
+          padding: 10px;
+          font-weight: 300;
+          color: $white;
+        }
+      }
+    }
+  }
+}
 
+// /* Medium devices (landscape tablets, 992px and up) */
+@media only screen and (max-width: 768px) {
+  #whatitdo {
+    .left-split {
+      display: none;
+    }
+    .right-split {
+      width: 100%;
+    }
+  }
+  #whoweserve {
+    .left-split {
+      width: 100%;
+      background-color: $off-white;
+    }
+    .right-split {
+      display: none;
+    }
+  }
+  .startup-wrapper {
+    .startup {
+      float: left;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: $grey;
+      height: 100%;
+      #startup-img {
+        float: none;
+        margin: auto;
+        padding-top: 60px;
+        img {
+          width: 100%;
+        }
+      }
+      #startup-info {
+        padding: 20px;
+        padding-left: 50px;
+        margin: auto;
+        width: 80%;
+        text-align: left;
+        
+      }
+    }
+    .post {
+      float: right;
+      width: 100%;
+      .l-red {
+        color: $red;
+        font-size: 40px;
+      }
+      .l-thin {
+        font-weight: 300;
+        font-size: 40px;
+      }
+      .post-title-wrapper {
+        padding: 35px;
+        a {
+          text-decoration: none;
+        }
+        .post-title {
+          background-color: $grey;
+          text-align: center;
+          padding: 25px;
+          text-decoration: none;
+          p {
+            text-decoration: none;
+            color: $white;
+            font-weight: 300;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
 
+  .post-container {
+    flex-direction: column;
+  }
+  .post-wrapper {
+    position:relative;
+    text-align:center;
+    .post-overlay {
+      h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 25px;
+      }
+    }
+  }
+  .footer-wrapper {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+  
+    .links {
+      flex: 1;
+      flex-grow: 1;
+      width: 100%;
+      order: 2;
+  
+      background-color: $off-white;
+      .l-red {
+        color: $red;
+        font-size: 45px;
+        font-weight: 800;
+      }
+      a {
+        text-decoration: none;
+        p {
+          margin: 0px;
+          font-weight: 400;
+          color: $grey;
+        }
+      }
+      p {
+        font-weight: 800;
+        .s-red {
+          color: $red;
+        }
+      }
+    }
+  
+    .accelerate-wrapper {
+      flex: 1;
+      flex-grow: 3;
+      order: 1;
+      
+      background-color: $grey;
+      .accelerate {
+        text-align: left;
+  
+        #accelerate-img {
+          float: none;
+          width: 100%;
+          img {
+            width: 75%;
+            padding: 50px;
+          }
+        }
+        #accelerate-text {
+          float: none;
+          width: 80%;
+          padding: 25px;
+          h1 {
+            font-size: 30px;
+          }
+          .l-red {
+            color: $red;
+            font-size: 40px;
+            font-weight: 800;
+          }
+          p {
+            color: $white;
+            font-weight: 300;
+          }
+        }
+      }
+      .cc {
+        display: none;
+      }
+    }
+  }
+}
