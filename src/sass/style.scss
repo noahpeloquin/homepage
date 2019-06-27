@@ -151,11 +151,6 @@ button:hover {
     overflow: hidden;
     height: 400px;
     text-align: left;
-
-    img {
-      width: 100%;
-    }
-
     .text-container {
       padding: 25px;
       padding-top: 15px;
@@ -175,10 +170,6 @@ button:hover {
       padding-top: 15px;
       font-weight: 300;
       font-size: 18px;
-    }
-
-    img {
-      width: 100%;
     }
   }
 
@@ -346,7 +337,7 @@ h1 {
   .accelerate-wrapper {
     flex: 1;
     flex-grow: 3;
-    
+
     background-color: $grey;
     .accelerate {
       text-align: left;
@@ -535,12 +526,12 @@ h1 {
   .footer-wrapper {
     clear: both;
     display: flex;
-  
+
     .links {
       flex: 1;
       flex-grow: 1;
       width: 25%;
-  
+
       background-color: $off-white;
       .l-red {
         color: $red;
@@ -562,15 +553,15 @@ h1 {
         }
       }
     }
-  
+
     .accelerate-wrapper {
       flex: 1;
       flex-grow: 3;
-      
+
       background-color: $grey;
       .accelerate {
         text-align: left;
-  
+
         #accelerate-img {
           float:left;
           width: 50%;
@@ -616,6 +607,51 @@ h1 {
 
 // /* Medium devices (landscape tablets, 992px and up) */
 @media only screen and (max-width: 768px) {
+
+  header {
+    background-color: $black;
+
+    .container {
+      padding: 25px;
+    }
+
+    .nav {
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $grey;
+        color:  $white;
+
+        li {
+          float: none;
+
+        }
+
+        li a {
+          display: block;
+          text-align: center;
+          padding: 16px;
+          padding-left: 40px;
+          padding-right: 40px;
+          text-decoration: none;
+          color:  $white;
+          font-weight: 300;
+        }
+
+        li a:hover {
+          background-color: $red;
+        }
+      }
+
+      hr {
+        border-color: $red;
+        margin: 0;
+        border-top: 3px solid $red;
+      }
+    }
+  }
   #whatitdo {
     .left-split {
       display: none;
@@ -655,7 +691,7 @@ h1 {
         margin: auto;
         width: 80%;
         text-align: left;
-        
+
       }
     }
     .post {
@@ -710,13 +746,13 @@ h1 {
     clear: both;
     display: flex;
     flex-direction: column;
-  
+
     .links {
       flex: 1;
       flex-grow: 1;
       width: 100%;
       order: 2;
-  
+
       background-color: $off-white;
       .l-red {
         color: $red;
@@ -738,16 +774,16 @@ h1 {
         }
       }
     }
-  
+
     .accelerate-wrapper {
       flex: 1;
       flex-grow: 3;
       order: 1;
-      
+
       background-color: $grey;
       .accelerate {
         text-align: left;
-  
+
         #accelerate-img {
           float: none;
           width: 100%;
